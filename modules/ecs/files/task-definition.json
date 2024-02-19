@@ -1,0 +1,15 @@
+[
+    {
+      "name": "${app_name}",
+      "image": "${img_repo}",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": ${app_port}
+        }
+      ],
+      "memory": 512,
+      "cpu": 256
+    }
+  ]
